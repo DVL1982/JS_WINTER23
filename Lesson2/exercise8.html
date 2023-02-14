@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise #8</title>
+  </head>
+  <body>
+    <h3>Завдання №8</h3>
+    <h5>
+      Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера
+      дня (від 1 до 6).
+    </h5>
+    <script>
+      const MinMonth = 1,
+        MaxMonth = 12;
+      const MinDay = 1,
+        MaxDay = 6;
+      let RandomCalculation =
+        Math.floor(MinMonth + Math.random() * (MaxMonth + 1 - MinMonth)) +
+        Math.floor(MinDay + Math.random() * (MaxDay + 1 - MinDay));
+      console.log(RandomCalculation);
+      document.write(`Сума випадкових номерів дорівнює: ${RandomCalculation}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise2</title>
+  </head>
+
+  <body>
+    <h1>Завдання №2</h1>
+    <p>
+      Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у
+      формі таблиці
+    </p>
+
+    <script>
+      let firstRealNumber = parseFloat(prompt("Введіть перше дійсне число"));
+      let secondRealNumber = parseFloat(prompt("Введіть друге дійсне число"));
+
+      let sumRealNumbers = firstRealNumber + secondRealNumber;
+      let multiplyRealNumbers = firstRealNumber * secondRealNumber;
+      let fractionRealNumbers = firstRealNumber / secondRealNumber;
+
+      document.write(`<table>
+   <tr>
+      <td>Сумма чисел = ${sumRealNumbers}</td>
+   </tr>
+   <tr>
+      <td>Добуток чисел = ${multiplyRealNumbers}</td>
+   </tr>
+   <tr>
+      <td>Частка чисел = ${fractionRealNumbers}</td>
+   </tr>
+   </table>`);
+    </script>
+  </body>
+</html>

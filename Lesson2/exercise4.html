@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise #4</title>
+  </head>
+
+  <body>
+    <h1>Завдання №4</h1>
+    <p>
+      Дано вартість одиниці товару і кількість. Знайти загальну вартість та суму
+      ПДВ - 5%
+    </p>
+
+    <script>
+      const tax = 0.05;
+      let productValue = parseFloat(prompt("Введіть вартість товару"));
+      let productQuantity = parseInt(prompt("Введіть кількість позицій"));
+
+      let totalValue = productValue * productQuantity;
+      let totalTax = totalValue * tax;
+
+      document.write(`
+    <table border="4px">
+      <tr>
+         <td>Загальна вартість = ${totalValue}</td>
+      </tr>
+      <tr>
+         <td>ПДВ складає =${totalTax}</td>
+      </tr>
+   </table>
+      `);
+    </script>
+  </body>
+</html>

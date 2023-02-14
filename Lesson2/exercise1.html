@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+
+<head>
+   <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercise #1</title>
+</head>
+
+<body>
+   <h1>Завдання №1</h1>
+   <p>Обчислити значення виразів</p>
+   
+	<p>S_1=a+12+b</p>
+
+   <p>S_2=√(((a+b)/2a))</p>
+   
+	<p>S_3=∛((a+b)c)</p>
+   
+	<p>S_4=sin⁡(a/(-b))</p>
+   
+   <script>
+      let a = parseFloat(prompt('Введіть число A', '0'))
+      let b = parseFloat(prompt('Введіть число B', '0'))
+      let c = parseFloat(prompt('Введіть число C', '0'))
+
+      let s1 = a + 12 + b
+      let s2 = Math.sqrt((a + b) / (2 * a))
+      let s3 = Math.cbrt(((a + b) * c))
+      let s4 = Math.sin(a / (-b))
+
+
+   document.write(`
+    <table border="4px">
+      <tr>
+         <td>s1 = ${s1}</td>
+      </tr>
+      <tr>
+         <td>s2 = ${s2}</td>
+      </tr>
+      <tr>
+         <td>s3 = ${s3}</td>
+      </tr>
+      <tr>
+         <td>s4 = ${s4}</td>
+      </tr>
+    </table>
+      `)
+   </script>
+</body>
+
+
+</html>

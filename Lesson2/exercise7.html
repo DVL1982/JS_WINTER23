@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise #7</title>
+  </head>
+  <body>
+    <h1>Завдання №7</h1>
+    <p>
+      З клавіатури вводяться вартість товару та кількість одиниць 3 товарів.
+      Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек
+      (як у супермаркеті) використовуючи елементи розмітки.
+    </p>
+
+    <script>
+      let firstPrice = parseFloat(prompt("Введіть вартість товару"));
+      let firstQuantity = parseInt(prompt("Введіть кількість позицій"));
+
+      let secondPrice = parseFloat(prompt("Введіть вартість товару"));
+      let secondQuantity = parseInt(prompt("Введіть кількість позицій"));
+
+      let thirdPrice = parseFloat(prompt("Введіть вартість товару"));
+      let thirdQuantity = parseInt(prompt("Введіть кількість позицій"));
+
+      let firstValue = firstPrice * firstQuantity;
+      let secondValue = secondPrice * secondQuantity;
+      let thirdValue = thirdPrice * thirdQuantity;
+
+      totalValue = firstValue + secondValue + thirdValue;
+
+      document.write(`
+      <table border="4px">
+         <tr>
+            <td>Перша позиція = ${firstValue}</td>
+         </tr>
+         <tr>
+            <td>Друга позиція = ${secondValue}</td>
+         </tr>
+         <tr>
+            <td>Третя позиція = ${thirdValue}</td>
+         </tr>
+         <tr>
+            <td>Загальна вартість = ${totalValue}</td>
+         </tr>
+      </table>
+      `);
+    </script>
+  </body>
+</html>

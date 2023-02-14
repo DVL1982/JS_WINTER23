@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise #5</title>
+  </head>
+  <body>
+    <h1>Завдання №5</h1>
+    <p>Дана довжина у сантиметрах. Визначати скільки це метрів і кілометрів.</p>
+
+    <script>
+      const Cm_In_Kilometr = 100000;
+      const Cm_In_Metr = 100;
+
+      let lengthInCM = parseFloat(prompt("Введіть довжину в сантиметрах"));
+
+      let lengthInMetr = lengthInCM / Cm_In_Metr;
+      let lengthInKilometers = lengthInCM / Cm_In_Kilometr;
+
+      document.write(`
+      <table border="4px">
+         <tr>
+            <td>Довжина в метрах = ${lengthInMetr}</td>
+         </tr>
+         <tr>
+            <td>Довжина в кілометрах = ${lengthInKilometers}</td>
+         </tr>
+      </table>
+      `);
+    </script>
+  </body>
+</html>
